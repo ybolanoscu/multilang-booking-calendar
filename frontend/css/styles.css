@@ -1,0 +1,771 @@
+/* General styles */
+
+.mbc-box {
+    box-sizing: border-box;
+}
+
+.mbc-row {
+    display: table-row;
+}
+
+.mbc-button {
+    float: left;
+    width: 12.5%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mbc-button-rl {
+    padding: 0px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    box-shadow: none;
+    background: #ffffff;
+    border-radius: 2px;
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.mbc-button-rl:hover {
+    color: #ffffff;
+    background: #889196;
+}
+
+.mbc-button-rl:active {
+    background: rgb(221, 221, 221);
+}
+
+.mbc-dotted {
+    border-left: 1px dotted rgb(221, 221, 221);
+    background-clip: padding-box !important;
+}
+
+/* Booking form */
+#mbc-form-wrapper {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mbc-form-error {
+    color: red;
+}
+
+input.mbc-form-error {
+    border: 1px solid red;
+}
+
+label.mbc-form-error {
+    font-size: 0.8em;
+    display: block;
+    clear: both;
+    margin-bottom: 0px;
+}
+
+#mbc-form-content {
+    display: block;
+    margin: 0 auto;
+    min-width: 300px;
+    width: 100%;
+}
+
+.mbc-form-header {
+    border-bottom: 2px dotted rgb(221, 221, 221);
+    text-align: center;
+}
+
+.mbc-form {
+    position: relative;
+}
+
+.mbc-form:before,
+.mbc-form:after {
+    content: " ";
+    display: table;
+}
+
+.mbc-booking-form:after {
+    clear: both;
+}
+
+.mbc-column {
+    width: 33%;
+    min-width: 200px;
+    padding: 0 10px 0 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.mbc-booking-form .mbc-column {
+    min-width: 250px;
+}
+
+.mbc-fullcolumn {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    float: left;
+}
+
+.mbc-form-row {
+    clear: both;
+    padding: 10px 10px;
+}
+
+.mbc-form label {
+    display: block;
+    padding: 8px 0px 2px 0px;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.mbc-form input,
+.mbc-form textarea,
+.mbc-form select {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    line-height: 1.1;
+    font-size: 1em;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.mbc-form textarea {
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.mbc-form input:focus,
+.mbc-form textarea:focus,
+.mbc-form label:active + input,
+.mbc-form label:active + textarea {
+    outline: none;
+    border: 3px solid #10689a;
+}
+
+.mbc-form select:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+.mbc-input-fa {
+    position: relative;
+    font-size: 16px;
+}
+
+.mbc-input-fa input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 190px;
+    height: 32px;
+    border: 1px solid #aaa;
+    padding-left: 34px;
+}
+
+.mbc-input-fa select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 250px;
+    height: 32px;
+    border: 1px solid #aaa;
+    padding-left: 34px;
+}
+
+.mbc-input-fa select::-ms-expand {
+    display: none;
+}
+
+.mbc-input-fa .fa-calendar {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.mbc-input-fa .mbc-guest1 {
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}
+
+.mbc-input-fa .mbc-guest2 {
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+
+.mbc-submit-wrap {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+.mbc-submit {
+    background: #889196;
+    border: none;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    text-transform: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.mbc-submit:hover {
+    background: rgb(221, 221, 221);
+}
+
+.mbc-submit-loading {
+    display: none;
+    font-style: italic;
+}
+
+.mbc-result-calendar {
+    border-top: 1px dotted #a6c6ce;
+    padding: 10px 0px;
+}
+
+#mbc-bookingresults {
+    display: none;
+    padding: 10px;
+}
+
+.mbc-result-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.mbc-result-roomname {
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.mbc-extra-name {
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.mbc-extra-cost {
+    font-size: 0.8em;
+}
+
+.mbc-pointer {
+    cursor: pointer;
+}
+
+.mbc-option {
+    width: 230px;
+    clear: both;
+}
+
+.mbc-optional-column-checkbox {
+    width: 20px;
+    float: left;
+}
+
+.mbc-optional-column-text {
+    padding-left: 4px;
+    width: 200px;
+    float: left;
+}
+
+.mbc-clearfix {
+    clear: both;
+}
+
+.mbc-form-hr {
+    padding-top: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px dotted rgb(221, 221, 221);
+    background-color: transparent;
+    margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .mbc-column:nth-child(3) {
+        width: 100%;
+    }
+
+    #mbc-form-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .mbc-column {
+        width: 100%;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .mbc-form-row {
+        padding: 10px;
+    }
+
+    .mbc-result-calendar {
+        width: 100%;
+    }
+}
+
+/* Calendar Overview */
+
+.mbc-calendar-overview {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.mbc-calendar-overview td {
+    height: 30px;
+    padding: 0;
+    border-collapse: collapse;
+    display: table-cell;
+}
+
+.mbc-calendar-overview th {
+    text-align: center;
+    border-collapse: collapse;
+    display: table-cell;
+    border-right: 0;
+}
+
+.mbc-calendar-overview tr {
+    border-collapse: collapse;
+    display: table-row;
+    border-left: 0;
+}
+
+.mbc-calendar-overview thead, tbody {
+    border-left: 0;
+}
+
+.mbc-calendar-overview table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+.abcDateSelector {
+    font-size: 0.9em;
+    border-top: 0;
+    border-left: 0;
+    width: 200px;
+    display: table-cell;
+}
+
+.abcDateForm {
+    clear: both;
+    padding-top: 5px;
+}
+
+.abcDayNumber {
+    font-size: 1em !important;
+    padding: 2px 1px 2px 1px;
+    border-top: 0;
+    vertical-align: bottom;
+    width: 20px;
+    min-width: 15px;
+}
+
+.abcDayName {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.abcDayWeekend {
+    background-color: rgb(221, 221, 221);
+}
+
+.abcCalendarName {
+    vertical-align: middle;
+    width: 200px;
+    border-left: 0;
+    padding-left: 8px;
+}
+
+.abcCalendarName:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.abcMonthSelector {
+    padding: 4px;
+    font-size: 0.8em !important;
+    width: 70px;
+    text-indent: 0;
+    margin-bottom: 2px;
+    text-transform: none;
+}
+
+.abcYearSelector {
+    padding: 4px;
+    font-size: 0.8em !important;
+    width: 70px;
+    margin-bottom: 2px;
+}
+
+.abcDayAvail, .abcDayPartly, .abcDayBooked {
+    border-left: 0;
+    border-right: 0;
+    color: #ffffff;
+
+}
+
+.abcDayAvail {
+    background-color: #87cd9c !important;
+}
+
+.abcDayPartly {
+    background-color: #f9cb01 !important;
+}
+
+.abcDayBooked {
+    background-color: #ff6d2a !important;
+}
+
+.abcCellBorderLeft {
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right-style: none !important;
+}
+
+.mbc-overview-legend {
+    text-align: center;
+    font-size: 12px;
+}
+
+.mbc-overview-legend-partly {
+    color: rgb(249, 203, 1);
+    font-size: 14px;
+    padding: 4px 4px 4px 20px;
+}
+
+.mbc-overview-legend-fully {
+    color: rgb(255, 109, 42);
+    font-size: 14px;
+    padding: 4px 4px 4px 20px;
+}
+
+.mbc-overview-legend-available {
+    color: rgb(135, 205, 156);
+    font-size: 14px;
+    padding: 4px 4px 4px 20px;
+}
+
+.mbc-powered-by {
+    text-align: right;
+    font-size: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 70em) {
+    .mbc-overview-calendar-name {
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        writing-mode: lr-tb;
+        border-bottom: 0;
+        width: 60px;
+        font-size: 80%;
+    }
+
+    .mbc-overview-date-calendar {
+        width: 60px;
+    }
+
+    .mbc-overview-button-pn {
+        width: 60px;
+    }
+
+    .mbc-overview-date {
+        width: 60px;
+        font-size: 75%;
+    }
+
+    .abcCalenderName, .abcDateSelector {
+        width: 150px;
+    }
+
+    .mbc-overview-legend-partly {
+        padding: 4px;
+    }
+
+    .mbc-overview-legend-fully {
+        padding: 4px;
+    }
+
+    .mbc-overview-legend-available {
+        padding: 4px;
+    }
+}
+
+/* Single Calendar */
+
+.mbc-singlecalendar {
+    width: 100%;
+    max-width: 400px;
+    font-size: 12px;
+    background-color: rgb(240, 240, 240);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mbc-single-row:after {
+    content: "";
+    clear: both;
+    display: block;
+    /*height: 12.5px;*/
+}
+
+.mbc-single-button-right {
+    text-align: right;
+}
+
+.mbc-single-button-left {
+    text-align: left;
+}
+
+.mbc-month {
+    float: left;
+    width: 75%;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 120%;
+    text-align: center;
+}
+
+.mbc-col-day {
+    float: left;
+    width: 14.28%;
+    padding: 4px 8px 4px 8px;
+    margin-bottom: 7px;
+    color: #000000;
+    text-align: center;
+}
+
+.mbc-dayname {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.mbc-avail {
+    /*color: #ffffff;*/
+    background-color: rgba(43, 203, 0, 0.2);
+}
+
+.mbc-past {
+    font-style: italic;
+    background-color: #eee;
+}
+
+.mbc-booked {
+    background-color: #ff6d2a;
+}
+
+.mbc-partly-avail {
+    background-color: #f9cb01;
+}
+
+.mbc-avail-partly-avail {
+    background: #f9cb01; /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(240, 240, 240) 50%, #f9cb01 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(240, 240, 240) 50%, #f9cb01 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(240, 240, 240) 50%, #f9cb01 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(240, 240, 240)', endColorstr='#f9cb01', GradientType=1); /* IE6-9 */
+}
+
+.mbc-partly-avail-avail {
+    background: rgb(240, 240, 240); /* Old browsers */
+    background: -moz-linear-gradient(left, #f9cb01 50%, rgb(240, 240, 240) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f9cb01 50%, rgb(240, 240, 240) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f9cb01 50%, rgb(240, 240, 240) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9cb01', endColorstr='rgb(240, 240, 240)', GradientType=1); /* IE6-9 */
+}
+
+.mbc-avail-booked {
+    background: #ff6d2a; /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(240, 240, 240) 50%, #ff6d2a 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(240, 240, 240) 50%, #ff6d2a 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(240, 240, 240) 50%, #ff6d2a 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(240, 240, 240)', endColorstr='#ff6d2a', GradientType=1); /* IE6-9 */
+}
+
+.mbc-partly-booked {
+    background: #ff6d2a; /* Old browsers */
+    background: -moz-linear-gradient(left, #f9cb01 50%, #ff6d2a 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f9cb01 50%, #ff6d2a 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f9cb01 50%, #ff6d2a 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9cb01', endColorstr='#ff6d2a', GradientType=1); /* IE6-9 */
+}
+
+.mbc-booked-avail {
+    background: rgb(240, 240, 240); /* Old browsers */
+    background: -moz-linear-gradient(left, #ff6d2a 50%, rgb(240, 240, 240) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff6d2a 50%, rgb(240, 240, 240) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff6d2a 50%, rgb(240, 240, 240) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d2a', endColorstr='rgb(240, 240, 240)', GradientType=1); /* IE6-9 */
+}
+
+.mbc-booked-partly {
+    background: #f9cb01; /* Old browsers */
+    background: -moz-linear-gradient(left, #ff6d2a 50%, #f9cb01 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff6d2a 50%, #f9cb01 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff6d2a 50%, #f9cb01 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d2a', endColorstr='#f9cb01', GradientType=1); /* IE6-9 */
+}
+
+.mbc-today {
+    font-weight: bold;
+}
+
+.mbc-inactive {
+    color: rgb(160, 160, 160);
+}
+
+.mbc-deactivated {
+    background-color: rgb(240, 240, 240) !important;
+    font-style: italic !important;
+}
+
+.mbc-date-info {
+    border-top: 2px solid rgb(221, 221, 221);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.mbc-single-price {
+    font-size: 0.8em;
+}
+
+.mbc-single-price-lastminute {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.mbc-single-price-crossed {
+    font-style: italic;
+    font-size: 0.8em;
+    text-decoration: line-through;
+}
+
+.mbc-booking-selection {
+    border-top: 2px solid rgb(221, 221, 221);
+    padding: 5px 10px 5px 10px;
+    display: block;
+    clear: both;
+}
+
+.mbc-date-selector {
+    cursor: pointer;
+}
+
+.mbc-date-selected {
+    background: rgb(153, 231, 245);
+    color: #000;
+}
+
+.mbc-single-legend {
+    text-align: center;
+    padding-bottom: 4px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.mbc-single-legend-partly {
+    color: rgb(249, 203, 1);
+    font-size: 20px;
+    padding: 4px 4px 4px 20px;
+}
+
+.mbc-single-legend-fully {
+    color: rgb(255, 109, 42);
+    font-size: 20px;
+    padding: 4px 4px 4px 20px;
+}
+
+.mbc-single-legend-available {
+    font-size: 20px;
+    padding: 4px 4px 4px 20px;
+}
+
+@media screen and (max-width: 70em) {
+    .mbc-single-price {
+        font-size: 0.6em;
+    }
+
+    .mbc-single-legend-partly {
+        padding: 4px;
+    }
+
+    .mbc-single-legend-fully {
+        padding: 4px;
+    }
+
+    .mbc-single-legend-available {
+        padding: 4px;
+    }
+}
+
+/* Widget */
+.mbc-widget {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.mbc-widget-row {
+    max-width: 200px;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#mbc-widget-wrapper {
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}	
+	
